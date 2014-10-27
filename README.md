@@ -19,6 +19,16 @@ c0d24fc1ad8ad5d82891214152023234  target_networks.txt
 854b0393706b038bc059527e75b82f2a  targets_sorted.txt
 e7d6010f71b884b94fea1a4fa4d20c75  targets_unique.txt
 
+$ wc *.txt
+  443258   443260  5900717 all_attempts.txt
+  443258   443258  6526522 all_ips.txt
+     311     3763    32183 target_network_geo.txt
+     311      311     3923 target_networks.txt
+  523855   523855  7258822 targets.txt
+    3170     6340    70373 targets_sorted.txt
+    3170     3170    45013 targets_unique.txt
+ 1417333  1423957 19837553 total
+
 all_attempts.txt	- This is a text file containing all username/password combinations attackers have attempted against my SSH honeypots. This file is unsorted and un-unique'd.
 all_ips.txt		- This is a text file containing all IP addresses I've received SSH authentication attempts from. This file includes some benign IP addresses (such as mine) for testing, but is mostly malicious attackers or compromised boxes.
 targets.txt		- This is a text file containing all IP addresses the "CHUILANG" group have targeted with Distributed Denial of Service (DDOS) attacks between September and October. This file is unsorted and uniqued.
